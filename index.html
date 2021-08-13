@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> ¢ i n ö i r ª</title>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <div>
+                <img src="./imgs/gif.gif" alt="ideas">
+            </div>
+            <div class="name">
+                <h1>Cinara Menezes</h1>
+                <h5>Visual Designer | Front-end Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Oi! Eu sou designer gráfico, com graduação e mestrado com ênfase em Tecnologia e Cultura pela UFPE, mas em 2020 resolvi juntar conhecimentos e passei a cursar Análise e Desenvolvimento de Sistemas, onde me encontro no último período.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe o seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="email" placeholder="seu e-mail aqui! ;)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+            <div class="icons">
+
+                <a target="_blank" href="https://github.com/cinmnzs"><img src="./imgs/icon_gh.png" alt="github"></a>
+
+                <a target="_blank" href="https://www.behance.net/cinmnzs"><img src="./imgs/icon_bh.png" alt="behance"></a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/cinara-menezes-60580318a/"><img src="./imgs/icon_link.png" alt="linkedin"></a>
+
+                <a target="_blank" href="https://wa.me/5581996100710"><img src="./imgs/icon_wa.png" alt="whatsapp"></a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
